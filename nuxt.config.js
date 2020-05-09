@@ -72,5 +72,13 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: "http://localhost:3000/graphql"
+      }
+    }
   }
 };
