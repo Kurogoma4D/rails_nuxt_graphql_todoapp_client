@@ -38,11 +38,11 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxt/typescript-build", "@nuxtjs/vuetify"],
+  buildModules: ["@nuxtjs/vuetify"],
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/pwa"],
+  modules: ["@nuxtjs/pwa", "@nuxtjs/apollo"],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -75,6 +75,7 @@ export default {
   },
 
   apollo: {
+    includeNodeModules: true,
     clientConfigs: {
       default: {
         httpEndpoint: "http://localhost:3000/graphql"
